@@ -1,0 +1,29 @@
+{
+    "name": "joelma",
+    "description": "Joelma is a feature-rich theme that is likely to impress you with its beautiful design. This theme has everything that a professional blog needs. Check it out!",
+    "demo": "https://joelma.hauntedthemes.com/",
+    "version": "1.1.2",
+    "license": "GNU General Public License, Version 2",
+    "engines": {
+        "ghost": ">=1.0.0"
+    },
+    "author": {
+        "name": "Haunted Themes",
+        "email": "contact@hauntedthemes.com",
+        "url": "https://www.hauntedthemes.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Writer"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "config": {
+        "posts_per_page": 5
+    }
+}

@@ -1,0 +1,40 @@
+{{!-- The tag below means - insert everything in this file into the {body} of the default.hbs template --}}
+{{!< default}}
+
+{{#tag}}
+    <div class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="bg" {{#if feature_image}}style="background-image: url({{img_url feature_image}});"{{/if}}></div>
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h1 class="post-title">{{name}}</h1>
+                                    <p class="excerpt">{{description}}</p>
+                                    <ul class="post-meta">
+                                     	<li>{{plural ../pagination.total empty=(t "A collection of posts") singular=(t "A collection of 1 post") plural=(t "A collection of % posts")}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <a href="#" class="go"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+{{/tag}}
+
+{{!-- The main content area --}}
+<main id="content" class="container" role="main">
+	<div class="row">
+		<div class="col-lg-10 col-md-10 col-sm-12 ml-auto mr-auto loop">
+			{{#foreach posts}}
+    			{{> "loop"}}
+    		{{/foreach}}
+		</div>
+    </div>
+</main>
+{{pagination}}
