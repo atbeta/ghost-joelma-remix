@@ -7,7 +7,7 @@
         <div class="intro">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <li class="swiper-slide half-slide">
+                    <li class="swiper-slide">
                         <div class="bg" {{#if cover_image}}style="background-image: url({{img_url cover_image}});"{{/if}}></div>
                         <div class="inner">
                             <div class="container">
@@ -39,13 +39,13 @@
 {{/author}}
 
 {{!-- The main content area --}}
-<main id="content" class="container" role="main">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 col-sm-12 ml-auto mr-auto loop">
-            {{#foreach posts}}
-                {{> "loop"}}
-            {{/foreach}}
-        </div>
-    </div>
-</main>
-{{pagination}}
+<!--<main id="content" class="container" role="main">-->
+    <!--<div class="row">-->
+        <!--<div class="col-lg-8 col-md-10 col-sm-12 ml-auto mr-auto loop">-->
+            <!--{{#foreach posts}}-->
+                <!--{{> "loop"}}-->
+            <!--{{/foreach}}-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</main>-->
+<!--{{pagination}}-->

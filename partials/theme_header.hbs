@@ -1,14 +1,14 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-6 ml-auto">
+            <div class="col-5 ml-auto">
                 <div class="blog-logo">
                     <a href="{{@blog.url}}" title="{{@blog.title}}">
-                        {{#if @blog.logo}} <img src="{{@blog.logo}}" alt="{{@blog.title}}" /> {{else}}<span>{{@blog.title}}</span>{{/if}} 
+                        {{#if @blog.logo}} <img src="{{@blog.logo}}" alt="{{@blog.title}}" /> {{else}}<span>{{@blog.title}}</span>{{/if}}
                     </a>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-7">
                 <div class="inner">
                     <div class="navigation">
                         <a href="#" class="navigation-trigger">
@@ -28,7 +28,7 @@
                                     <form>
                                         <input id="search-field" placeholder="{{t "Search"}}" autocomplete="off"/>
                                     </form>
-                                    <div id="results" data-other="{{t "Other"}}"></div>      
+                                    <div id="results" data-other="{{t "Other"}}"></div>
                                 </div>
                             </div>
                             <div class="bookmark-content">
