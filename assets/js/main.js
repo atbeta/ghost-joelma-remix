@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
         'load-more': false,
         'infinite-scroll': false,
         'infinite-scroll-step': 1,
-        'disqus-shortname': 'hauntedthemes-demo'
+        'disqus-shortname': 'pbeta'
     };
 
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
     });
 
     if (typeof ghost !== 'undefined') {
-        // Check 'read later' posts 
+        // Check 'read later' posts
         if (typeof Cookies.get('joelma-read-later') !== "undefined") {
             readLaterPosts = JSON.parse(Cookies.get('joelma-read-later'));
         }
@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 
     $('.social-trigger, .bookmark, .search-trigger, .navigation-trigger, .trigger-share').on('click', function(event) {
         event.preventDefault();
-    });    
+    });
 
     function closePopover(id){
         $(id).find('.close').on('click', function(event) {
@@ -250,7 +250,7 @@ jQuery(document).ready(function($) {
                 readLaterPosts = readLater($(id + " #results"), readLaterPosts);
 
             }
-        });   
+        });
 
         if (w > 575) {
             if (!$('body').hasClass('ie')) {
@@ -269,7 +269,7 @@ jQuery(document).ready(function($) {
             });
             bookmarks(readLaterPosts);
         }
-        
+
         $(content).find('.read-later').each(function(index, el) {
             $(this).on('click', function(event) {
                 event.preventDefault();
@@ -393,7 +393,7 @@ jQuery(document).ready(function($) {
 
     $(document).on('click', function (e) {
         $('[data-toggle="popover"],[data-original-title]').each(function () {
-            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {                
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
                 (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false
             }
         });
@@ -527,9 +527,9 @@ jQuery(document).ready(function($) {
         $('body').addClass('scroll');
     }
     $(window).on('scroll', function(event) {
-        
+
         var checkShare = 0;
-        
+
         $('.content-inner img').each(function(index, el) {
             var scrollTop = $(window).scrollTop();
             var elementOffset = $(this).offset().top;
@@ -591,7 +591,7 @@ jQuery(document).ready(function($) {
         },
         lang: 'ro',
         submitHandler: function (form) {
-            $(".gh-signin").submit();              
+            $(".gh-signin").submit();
         }
     });
 
@@ -604,7 +604,7 @@ jQuery(document).ready(function($) {
             ],
             tooltipTimeout: 250
         });
-    }; 
+    };
 
     // Execute on resize
     $(window).on('resize', function(event) {

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2dbcda9-7776-4d88-a43f-ce4726b3abac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/libraries.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/libraries.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="b2dbcda9-7776-4d88-a43f-ce4726b3abac" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -76,13 +72,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="179" />
+          <entry key="css" value="218" />
           <entry key="hbs" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="179" />
+          <entry key="CSS" value="218" />
           <entry key="Handlebars/Mustache" value="92" />
         </counts>
       </usages-collector>
@@ -127,20 +123,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3201">
-              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="665">
+              <caret line="2187" column="19" lean-forward="true" selection-start-line="2187" selection-start-column="19" selection-end-line="2187" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/libraries.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18010">
-              <caret line="5" column="287" selection-start-line="5" selection-start-column="287" selection-end-line="5" selection-end-column="287" />
+            <state relative-caret-position="399">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -178,6 +174,7 @@
       <find>140</find>
       <find>col-lg-</find>
       <find>col-lg</find>
+      <find>swi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -317,12 +314,12 @@
       <updated>1541657235887</updated>
       <workItem from="1541657237127" duration="2494000" />
       <workItem from="1542878958023" duration="1295000" />
-      <workItem from="1542898561730" duration="1878000" />
+      <workItem from="1542898561730" duration="2198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5667000" />
+    <option name="totallyTimeSpent" value="5987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="504" y="24" width="2056" height="1342" extended-state="0" />
@@ -442,17 +439,17 @@
     <entry file="file://$PROJECT_DIR$/partials/theme_head.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/libraries.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18010">
-          <caret line="5" column="287" selection-start-line="5" selection-start-column="287" selection-end-line="5" selection-end-column="287" />
+        <state relative-caret-position="665">
+          <caret line="2187" column="19" lean-forward="true" selection-start-line="2187" selection-start-column="19" selection-end-line="2187" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/libraries.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3201">
-          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="399">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
