@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /*
-  
+
     0.  Normalize
     1.  General
     2.  Header
@@ -1061,19 +1061,19 @@ header .popover-body ul.social-icons li a{
 }
 
 .content-inner h1 .chain{
-    top: 45px;
-}
-
-.content-inner h2 .chain{
-    top: 35px;
-}
-
-.content-inner h3 .chain{
     top: 25px;
 }
 
+.content-inner h2 .chain{
+    top: 8px;
+}
+
+.content-inner h3 .chain{
+    top: 2px;
+}
+
 .content-inner h4 .chain{
-    top: 21px;
+    top: -5px;
 }
 
 .content-inner h5 .chain,
@@ -2140,10 +2140,10 @@ footer a:hover{
 /* ==========================================================================
    9. Normalize
   ========================================================================== */
-    
+
   .content-inner blockquote {
     margin: 0 0 1em;
     padding: 0 1em;
     border-left: #3eb0ef 4px solid;
   }
-  
+
