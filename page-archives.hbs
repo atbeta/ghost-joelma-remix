@@ -1,0 +1,62 @@
+{{!< default}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+    <div class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <li class="swiper-slide half-slide">
+                    <div class="bg" {{#if feature_image}}style="background-image: url({{img_url feature_image}});"{{/if}}></div>
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h1 class="post-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
+                                    <!--<ul class="post-meta">-->
+                                        <!--<li><time class="post-date" datetime="{{date format="YYYY-MM-DD"}}"><i class="fas fa-calendar-alt"></i> {{date format="DD MMM YYYY"}}</time></li>-->
+                                        <!--<li><div class="post-reading-time"><i class="fas fa-clock"></i> {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</div></li>-->
+                                    <!--</ul>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <a href="#" class="go"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+
+{{! The main container area on the homepage }}
+<main id="container" class="container" role="main">
+    <div id="content" class="content col-sm-12 col-md-12 col-lg-12">
+        <article class="archives">
+            <section class="archives-content">
+                <span class="archives-top"></span>
+                <span class="archives-total">
+                    {{! count posts }}
+                    {{#get "posts" as |posts postPages|}}
+                        {{! Use our pages (pagination) object }}
+                        <strong>
+                            {{plural postPages.total empty=(t "No posts") singular=(t "A collection of 1 post") plural=(t "A collection of % posts")}}
+                        </strong>
+                    {{/get}}
+                </span>
+                {{#get "posts" limit="all" order="published_at desc"}}
+                    {{#foreach posts}}
+                    <div class='archives-item' date="{{date format='YYYY'}}" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal">
+                        <div class='archives-info'>
+                            <div class="archives-info-meta">
+                                <i class='fa fa-calendar fa-fw' aria-hidden='true'></i>
+                                <time class="archives-date" datetime="{{date published_at format='MM-DD'}}">{{date published_at format="MM-DD"}}</time>
+                                <a href='{{url}}'>{{title}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/foreach}}
+                {{/get}}
+            </section>
+        </article>
+    <div>
+</main>
+
+{{/post}}
