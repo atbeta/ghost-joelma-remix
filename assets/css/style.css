@@ -540,7 +540,7 @@ header .no-bookmarks i{
 
 header .blog-logo span{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1;
 }
 
@@ -1095,16 +1095,16 @@ header .popover-body ul.social-icons li a{
 }
 
 .content-inner h4{
-    font-size: 14px;
+    font-size: 18px;
 }
 
-.content-inner h5{
-    font-size: 12px;
-}
+/*.content-inner h5{*/
+    /*font-size: 12px;*/
+/*}*/
 
-.content-inner h6{
-    font-size: 10px;
-}
+/*.content-inner h6{*/
+    /*font-size: 10px;*/
+/*}*/
 
 .content-inner iframe{
     margin: 0 auto;
@@ -1171,7 +1171,7 @@ header .popover-body ul.social-icons li a{
 }
 
 .content-inner .post-content blockquote{
-    font-style: italic;
+    /*font-style: italic;*/
     position: relative;
 }
 

@@ -239,7 +239,7 @@ jQuery(document).ready(function($) {
                 $.each(results, function(index, val) {
                     var dateSplit = val.pubDate.split(' ')
                     var month = monthNames.indexOf(dateSplit[1])+1;
-                    var date = moment(dateSplit[0]+'-'+month+'-'+dateSplit[2], "DD-MM-YYYY").format('DD MMM YYYY');
+                    var date = moment(dateSplit[0]+'-'+month+'-'+dateSplit[2], "DD-MM-YYYY").format('YYYY-MM-DD');
                     if (val.tags.length) {
                         $(id + ' #results ul[data-tag="'+ val.tags[0] +'"]').append('<li><a href="#" class="read-later" data-id="'+ val.ref +'"><i class="far fa-bookmark"></i><i class="fas fa-bookmark"></i></a><time>'+ date +'</time><a href="'+ val.link +'">'+ val.title +'</a></li>');
                     }else{
@@ -330,7 +330,7 @@ jQuery(document).ready(function($) {
                 $.each(data.posts, function(index, val) {
                     var dateSplit = prettyDate(val.published_at).split(' ')
                     var month = monthNames.indexOf(dateSplit[1])+1;
-                    var date = moment(dateSplit[0]+'-'+month+'-'+dateSplit[2], "DD-MM-YYYY").format('DD MMM YYYY');
+                    var date = moment(dateSplit[0]+'-'+month+'-'+dateSplit[2], "DD-MM-YYYY").format('YYYY-MM-DD');
                     if (val.tags.length) {
                         $('.bookmark-container ul[data-tag="'+ val.tags[0].name +'"]').append('<li><time>'+ date +'</time><a href="#" class="read-later active" data-id="'+ val.id +'"><i class="far fa-bookmark"></i><i class="fas fa-bookmark"></i></a><a href="/'+ val.slug +'">'+ val.title +'</a></li>');
                     }else{
