@@ -1273,7 +1273,7 @@ header .popover-body ul.social-icons li a{
 }
 
 .related-posts .loop .swiper-slide{
-    width: 730px;
+    width: 920px;
     margin: 0 15px;
     opacity: .25;
     -webkit-transition: opacity .3s cubic-bezier(0.2,1,0.3,1);
@@ -1807,7 +1807,7 @@ footer a:hover{
         height: calc(610px / 1.77777778) !important;
     }
     .related-posts .loop .swiper-slide {
-        width: 610px;
+        width: 770px;
     }
     .editor-content .kg-width-wide img,
     .editor-content .kg-gallery-container{
