@@ -11,9 +11,9 @@
 <body class="{{body_class}} nav-closed">
 
     <div class="main-container">
-    
+
         {{> theme_header}}
-        
+
         {{{body}}}
 
         {{> theme_footer}}
@@ -31,7 +31,7 @@
 
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
-    
+
     {{!-- The main JavaScript file for Joelma --}}
     {{#if pagination.pages}}
     <script>
@@ -39,6 +39,7 @@
     </script>
     {{/if}}
     <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+
 
 </body>
 </html>
