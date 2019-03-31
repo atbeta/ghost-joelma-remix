@@ -154,30 +154,30 @@ jQuery(document).ready(function($) {
         closePopover('#' + id);
     })
 
-    // Social Popover
-
-    $('.social-trigger').popover({
-        container: '.social-content',
-        html: true,
-        placement: 'bottom',
-        content: function() {
-            return $('.social-popover').html();
-        }
-    });
-
-    $('.social-trigger').on('shown.bs.popover', function () {
-        var id = $('.social-trigger').attr('aria-describedby');
-        if ($('.social-popover').attr('data-twitter') != '') {
-            var twitter = $('.social-popover').attr('data-twitter').substr(1);
-            $('#' + id).find('.social-container').append('<a class="twitter-timeline" data-width="300" data-height="800" data-theme="dark" data-tweet-limit="5" data-chrome="noborders noheader transparent" href="https://twitter.com/'+ twitter +'?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
-        };
-        if (w > 575) {
-            if (!$('body').hasClass('ie')) {
-                new SimpleBar($('#' + id)[0]);
-            };
-        };
-        closePopover('#' + id);
-    });
+    // // Social Popover
+    //
+    // $('.social-trigger').popover({
+    //     container: '.social-content',
+    //     html: true,
+    //     placement: 'bottom',
+    //     content: function() {
+    //         return $('.social-popover').html();
+    //     }
+    // });
+    //
+    // $('.social-trigger').on('shown.bs.popover', function () {
+    //     var id = $('.social-trigger').attr('aria-describedby');
+    //     if ($('.social-popover').attr('data-twitter') != '') {
+    //         var twitter = $('.social-popover').attr('data-twitter').substr(1);
+    //         $('#' + id).find('.social-container').append('<a class="twitter-timeline" data-width="300" data-height="800" data-theme="dark" data-tweet-limit="5" data-chrome="noborders noheader transparent" href="https://twitter.com/'+ twitter +'?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
+    //     };
+    //     if (w > 575) {
+    //         if (!$('body').hasClass('ie')) {
+    //             new SimpleBar($('#' + id)[0]);
+    //         };
+    //     };
+    //     closePopover('#' + id);
+    // });
 
     // Initialize Disqus comments
     if ($('#content').attr('data-id') && config['disqus-shortname'] != '') {
@@ -509,52 +509,52 @@ jQuery(document).ready(function($) {
         hljs.highlightBlock(block);
     });
 
-    // Make share buttons sticky
-    function stickyShareButtons(w){
-        if (w < 576) {
-            $('.content-inner .share').trigger("sticky_kit:detach");
-        }else{
-            $('.content-inner .share').stick_in_parent({
-                offset_top: 100
-            });
-        }
-    }
-    stickyShareButtons(w);
-
-    // Execute on scroll
-    var shareHeight = $('.content-inner .share ul').height();
-    if ($(this).scrollTop() > 0) {
-        $('body').addClass('scroll');
-    }
-    $(window).on('scroll', function(event) {
-
-        var checkShare = 0;
-
-        $('.content-inner img').each(function(index, el) {
-            var scrollTop = $(window).scrollTop();
-            var elementOffset = $(this).offset().top;
-            var imgDistance = (elementOffset - scrollTop);
-            var imgHeight = $(this).height();
-            var shareDistance = shareHeight + 100;
-            if (imgDistance < shareDistance && (imgDistance + imgHeight) > 100) {
-                checkShare++;
-            };
-        });
-
-        if (checkShare > 0) {
-            $('.content-inner .share').addClass('fade');
-        }else{
-            $('.content-inner .share').removeClass('fade');
-        };
-
-        if ($(this).scrollTop() > 0) {
-            $('body').addClass('scroll');
-        }else{
-            $('body').removeClass('scroll');
-        };
-
-    });
-
+    // // Make share buttons sticky
+    // function stickyShareButtons(w){
+    //     if (w < 576) {
+    //         $('.content-inner .share').trigger("sticky_kit:detach");
+    //     }else{
+    //         $('.content-inner .share').stick_in_parent({
+    //             offset_top: 100
+    //         });
+    //     }
+    // }
+    // stickyShareButtons(w);
+    //
+    // // Execute on scroll
+    // var shareHeight = $('.content-inner .share ul').height();
+    // if ($(this).scrollTop() > 0) {
+    //     $('body').addClass('scroll');
+    // }
+    // $(window).on('scroll', function(event) {
+    //
+    //     var checkShare = 0;
+    //
+    //     $('.content-inner img').each(function(index, el) {
+    //         var scrollTop = $(window).scrollTop();
+    //         var elementOffset = $(this).offset().top;
+    //         var imgDistance = (elementOffset - scrollTop);
+    //         var imgHeight = $(this).height();
+    //         var shareDistance = shareHeight + 100;
+    //         if (imgDistance < shareDistance && (imgDistance + imgHeight) > 100) {
+    //             checkShare++;
+    //         };
+    //     });
+    //
+    //     if (checkShare > 0) {
+    //         $('.content-inner .share').addClass('fade');
+    //     }else{
+    //         $('.content-inner .share').removeClass('fade');
+    //     };
+    //
+    //     if ($(this).scrollTop() > 0) {
+    //         $('body').addClass('scroll');
+    //     }else{
+    //         $('body').removeClass('scroll');
+    //     };
+    //
+    // });
+    //
     var imgHeight = 0;
     $('.related-posts').imagesLoaded( function() {
         $('.related-posts img').each(function(index, el) {
@@ -595,26 +595,26 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // Initialize shareSelectedText
-    if (config['share-selected-text']) {
-        shareSelectedText('.post-template .post-content', {
-            sanitize: true,
-            buttons: [
-                'twitter',
-            ],
-            tooltipTimeout: 250
-        });
-    };
+    // // Initialize shareSelectedText
+    // if (config['share-selected-text']) {
+    //     shareSelectedText('.post-template .post-content', {
+    //         sanitize: true,
+    //         buttons: [
+    //             'twitter',
+    //         ],
+    //         tooltipTimeout: 250
+    //     });
+    // };
 
-    // Execute on resize
-    $(window).on('resize', function(event) {
-        w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        stickyShareButtons(w);
-    });
-
-    if ($('.error-title').length) {
-        $('body').addClass('error');
-    };
+    // // Execute on resize
+    // $(window).on('resize', function(event) {
+    //     w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    //     stickyShareButtons(w);
+    // });
+    //
+    // if ($('.error-title').length) {
+    //     $('body').addClass('error');
+    // };
 
     // Set the right proportion for images inside the gallery
     function setGalleryRation(){
